@@ -1,10 +1,24 @@
 import Card from "./components/card";
 import Footer from "./components/footer";
 import Nav from "./components/nav";
-import binoculars from "./assets/binoculars.png";
-import mission from "./assets/mission.png";
-import black from "./assets/black.jpg";
-import spectacles from "./assets/spectacles.png";
+
+import binoculars from "../assets/binoculars.png";
+import mission from "../assets/mission.png";
+import spectacles from "../assets/spectacles.png";
+import board from "../assets/board.png";
+import board2 from "../assets/board2.png";
+import board3 from "../assets/board3.png";
+import board4 from "../assets/board4.png";
+import board5 from "../assets/board5.png";
+import board6 from "../assets/board6.png";
+import mgt from "../assets/mgt.png";
+import mgt2 from "../assets/mgt7.png";
+import mgt3 from "../assets/mgt2.png";
+import mgt4 from "../assets/mgt3.png";
+import mgt5 from "../assets/mgt4.png";
+import mgt6 from "../assets/mgt5.png";
+import mgt7 from "../assets/mgt6.png";
+
 
 function About() {
     return(
@@ -86,12 +100,12 @@ function About() {
                     </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 m-5">
-                    <img alt="" src={ black } className="w-4/5 h-auto mx-auto" />
-                    <img alt="" src={ black } className="w-4/5 h-auto mx-auto"/>
-                    <img alt="" src={ black } className="w-4/5 h-auto mx-auto"/>
-                    <img alt="" src={ black } className="w-4/5 h-auto mx-auto"/>
-                    <img alt="" src={ black } className="w-4/5 h-auto mx-auto"/>
-                    <img alt="" src={ black } className="w-4/5 h-auto mx-auto"/>
+                    <img alt="" src={ board } className="w-4/5 h-auto mx-auto" />
+                    <img alt="" src={ board2 } className="w-4/5 h-auto mx-auto"/>
+                    <img alt="" src={ board3 } className="w-4/5 h-auto mx-auto"/>
+                    <img alt="" src={ board4 } className="w-4/5 h-auto mx-auto"/>
+                    <img alt="" src={ board5 } className="w-4/5 h-auto mx-auto"/>
+                    <img alt="" src={ board6 } className="w-4/5 h-auto mx-auto"/>
                 </div>
             </div>
 
@@ -103,34 +117,34 @@ function About() {
                         the ministry with collaboration, transparency, and accountability.
                     </p>
                     <div className="text-center lg:m-4">
-                        <img alt="" src={ black } className="w-4/5 h-auto mx-auto lg:w-1/4" />
+                        <img alt="" src={ mgt } className="w-4/5 h-auto mx-auto lg:w-1/4" />
                         <p className="font-bold text-lg">Mr. Rukundo Solomon </p>
                         <p className="font-semibold">Chair</p>
                     </div>
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 m-5">
                     <div className="text-center lg:m-4">
-                        <img alt="" src={ black } className="w-4/5 h-auto mx-auto" />
+                        <img alt="" src={ mgt2 } className="w-4/5 h-auto mx-auto" />
                         <p className="font-bold text-lg">Ms. Namwano Irene</p>
                     </div>
                     <div className="text-center m-4">
-                        <img alt="" src={ black } className="w-4/5 h-auto mx-auto" />
+                        <img alt="" src={ mgt3 } className="w-4/5 h-auto mx-auto" />
                         <p className="font-bold text-lg">Mr. Martin Munialo</p>
                     </div>
                     <div className="text-center m-4">
-                        <img alt="" src={ black } className="w-4/5 h-auto mx-auto" />
+                        <img alt="" src={ mgt4 } className="w-4/5 h-auto mx-auto" />
                         <p className="font-bold text-lg">Mrs. Angella Alimwenda</p>
                     </div>
                     <div className="text-center m-4">
-                        <img alt="" src={ black } className="w-4/5 h-auto mx-auto" />
+                        <img alt="" src={ mgt5 } className="w-4/5 h-auto mx-auto" />
                         <p className="font-bold text-lg">Mr. Robert Wanambwa</p>
                     </div>
                     <div className="text-center m-4">
-                        <img alt="" src={ black } className="w-4/5 h-auto mx-auto" />
+                        <img alt="" src={ mgt6 } className="w-4/5 h-auto mx-auto" />
                         <p className="font-bold text-lg">Ms. Kevin Okwera</p>
                     </div>
                     <div className="text-center m-4">
-                        <img alt="" src={ black } className="w-4/5 h-auto mx-auto" />
+                        <img alt="" src={ mgt7 } className="w-4/5 h-auto mx-auto" />
                         <p className="font-bold text-lg">Mr. Dickson Washitwaya</p>
                     </div>
                 </div>
