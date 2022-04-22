@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.jpg";
 import { useState } from "react";
 import Proptypes from "prop-types";
+
+import logo from "../../assets/logo.jpg";
 
 function Nav({ page }) {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
     <>
-      <nav className="flex justify-between font-semibold container mx-auto my-5">
+      <nav className="flex justify-between font-semibold container mx-auto my-5 px-5">
         {/* Logo will come here */}
         <div className="inline-block">
           <img
@@ -44,7 +45,10 @@ function Nav({ page }) {
               PRISON STORIES
             </p>
           </Link>
-          <Link to="/about" className="my-auto">
+          <Link
+            to="/about"
+            className={`my-auto ${page === "about-us" ? "font-bold" : ""}`}
+          >
             <p
               href="/"
               className="block hover:text-gray-700 my-auto lg:inline-block mr-10"
@@ -62,12 +66,17 @@ function Nav({ page }) {
               <path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z" />
             </svg>
           </button>
-          <button className="px-6 rounded-md text-white bg-red-700 mr-10">
-            <Link to="/donate">DONATE</Link>
-          </button>
-          <button className="px-6 rounded-md text-white bg-black mr-10">
-            <Link to="/get-started">GET INVOLVED</Link>
-          </button>
+
+          <Link to="/donate">
+            <button className="p-6 rounded-md text-white bg-red-700 mr-10">
+              DONATE
+            </button>
+          </Link>
+          <Link to="/get-started">
+            <button className="p-6 rounded-md text-white bg-black">
+              GET INVOLVED
+            </button>
+          </Link>
         </div>
         <div
           className="lg:hidden my-auto mx-4"
@@ -99,32 +108,48 @@ function Nav({ page }) {
               </svg>
             </button>
             <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
-              <Link to="/" className="my-4 mx-auto">
+              <Link
+                to="/"
+                className={`my-4 mx-auto ${page === "home" ? "font-bold" : ""}`}
+              >
                 <p className="block my-auto lg:inline-block hover:text-gray-700 mr-10">
                   HOME
                 </p>
               </Link>
-              <Link to="/what_we_do" className="my-4">
+              <Link
+                to="/what_we_do"
+                className={`my-4 ${page === "what-we-do" ? "font-bold" : ""}`}
+              >
                 <p className="block my-auto lg:inline-block hover:text-gray-700 mr-10">
                   WHAT WE DO
                 </p>
               </Link>
-              <Link to="/stories" className="my-4">
+              <Link
+                to="/stories"
+                className={`my-4 ${page === "stories" ? "font-bold" : ""}`}
+              >
                 <p className="block my-auto lg:inline-block hover:text-gray-700 mr-10">
                   PRISON STORIES
                 </p>
               </Link>
-              <Link to="/about" className="my-auto ">
+              <Link
+                to="/about"
+                className={`my-auto ${page === "about-us" ? "font-bold" : ""}`}
+              >
                 <p className="block hover:text-gray-700 my-auto lg:inline-block mr-10">
                   ABOUT US
                 </p>
               </Link>
-              <button className="px-6 py-4 my-4 rounded-md text-white bg-red-700 mr-10">
-                <Link to="/donate">DONATE</Link>
-              </button>
-              <button className="px-6 py-4 my-4 rounded-md text-white bg-black mr-10">
-                <Link to="/get-started">GET INVOLVED</Link>
-              </button>
+              <Link to="/donate">
+                <button className="p-6 rounded-md text-white bg-red-700 my-2">
+                  DONATE
+                </button>
+              </Link>
+              <Link to="/get-started">
+                <button className="p-6 rounded-md text-white bg-black my-2">
+                  GET INVOLVED
+                </button>
+              </Link>
             </ul>
           </div>
         </div>

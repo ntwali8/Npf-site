@@ -2,9 +2,8 @@ import Nav from "./components/nav";
 import Footer from "./components/footer";
 
 import group from "../assets/group.png";
-import black from "../assets/black.jpg";
-import binoculars from "./assets/binoculars.png";
-import mission from "./assets/mission.png";
+import binoculars from "../assets/binoculars.png";
+import mission from "../assets/mission.png";
 import book from "../assets/book.png";
 import calling from "../assets/calling.png";
 import downkids from "../assets/down-kids.png";
@@ -48,10 +47,14 @@ function Home() {
               lg:border-red-800 mx-auto my-10"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-0 lg:grid-cols-2 lg:gap-0 gap-5">
-            <div className=" md:border-0 md:rounded-none lg:rounded-none order-1">
-              <img className="bg-cover" src={calling} alt="" />
+            <div className="">
+              <img
+                className="bg-cover rounded-xl md:border-0 md:rounded-none lg:rounded-none"
+                src={calling}
+                alt=""
+              />
             </div>
-            <div className="text-center p-5 rounded-lg md:rounded-none md:border-0 border order-2">
+            <div className="text-center p-5 rounded-xl md:rounded-none md:border-0 border order-2 my-auto">
               <img
                 src={binoculars}
                 alt=""
@@ -66,7 +69,7 @@ function Home() {
               </p>
               <button className="bg-red-600 p-4 m-3">LEARN MORE</button>
             </div>
-            <div className="text-center p-5 rounded-lg border md:border-0 md:rounded-none order-4 md:order-3 lg:order-3">
+            <div className="text-center my-auto p-5 rounded-xl border md:border-0 md:rounded-none order-4 md:order-3 lg:order-3">
               <img src={mission} alt="" className="w-16 h-16 mx-auto" />
               <p className="m-2 font-semibold">MISION</p>
               <p>
@@ -79,7 +82,7 @@ function Home() {
             </div>
             <div className="order-3 md:order-4 lg:order-4">
               <img
-                className="bg-cover rounded-lg md:border-0 md:rounded-none lg:rounded-none"
+                className="bg-cover rounded-xl md:border-0 md:rounded-none lg:rounded-none"
                 src={book}
                 alt=""
               />
@@ -112,10 +115,37 @@ function Home() {
             the help of over 267 dedicated volunteers, lives have been and
             continue to be transformed.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 my-5">
-            <img src={black} className="" alt="" />
-            <img src={black} className="" alt="" />
-            <img src={black} className="" alt="" />
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-12 my-5">
+            <div>
+              <iframe
+                className="mx-auto"
+                src="https://www.youtube.com/embed/pDuKaZkWClA"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div>
+              <iframe
+                className="mx-auto"
+                src="https://www.youtube.com/embed/pDuKaZkWClA"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div>
+              <iframe
+                className="mx-auto"
+                src="https://www.youtube.com/embed/pDuKaZkWClA"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
         </div>
 
@@ -129,9 +159,30 @@ function Home() {
               supported while staying with their relatives and guardians.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 my-5">
-              <img src={downkids} className="" alt="" />
-              <img src={down2} className="" alt="" />
-              <img src={down3} className="" alt="" />
+              <div className="relative overflow-hidden">
+                <img src={downkids} className="object-cover" alt="" />
+                <div className="absolute bottom-10 left-10 md:left-5 lg:left-12 px-5 md:px-2 py-3 border border-white bg-amber-600">
+                  <h4 className="text-sm md:text-sm lg:text-xl font-semibold tracking-tight text-white">
+                    EDUCATION
+                  </h4>
+                </div>
+              </div>
+              <div className="relative overflow-hidden">
+                <img src={down2} className="object-cover" alt="" />
+                <div className="absolute bottom-10 left-6 md:left-2 lg:left-10 px-5 md:px-1 py-3 border border-white bg-green-800">
+                  <h4 className="text-sm md:text-sm lg:text-xl font-semibold tracking-tight text-white">
+                    MEDICAL SERVICES
+                  </h4>
+                </div>
+              </div>
+              <div className="relative overflow-hidden">
+                <img src={down3} className="object-cover" alt="" />
+                <div className="absolute bottom-10 left-8 md:left-2 lg:left-10 px-5 md:px-2 py-3 border border-white bg-blue-500">
+                  <p className="text-sm md:text-sm lg:text-xl font-semibold tracking-tight text-white">
+                    RECONCILIATION
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -9,7 +9,7 @@ function WeDo() {
   return (
     <>
       <header>
-        <Nav />
+        <Nav page="what-we-do" />
       </header>
       <main>
         <Card title="WHAT WE DO" />
