@@ -115,7 +115,7 @@ function Footer() {
         </div>
       </section>
       <section className="text-white bg-black">
-        <div className="border border-white justify-between p-4 flex">
+        <div className="border-y border-white justify-between p-4 flex">
           <div className="">
             <a
               className="block md:inline-block lg:inline-block underline px-3"

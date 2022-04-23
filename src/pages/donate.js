@@ -158,6 +158,7 @@ function Donate() {
                 src={lock}
                 alt=""
                 className="w-10 h-12 inline-block my-auto mx-5"
+                loading="lazy"
               />
               <p className="inline-block text-sm lg:text-lg">
                 By clicking DONATE your credit card will be securely processed.

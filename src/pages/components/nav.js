@@ -162,7 +162,7 @@ function Nav({ page }) {
             display: block;
             position: absolute;
             width: 60%;
-            height: 50%;
+            height: 70%;
             top: 0;
             right: 0;
             background: white;

@@ -20,7 +20,12 @@ function WeDo() {
           </p>
           <div className="grid lg:grid-cols-2 gap-5">
             <div className="p-3 pl-0 flex">
-              <img className=" w-full h-auto bg-cover" alt="" src={group} />
+              <img
+                className=" w-full h-auto bg-cover"
+                alt=""
+                src={group}
+                loading="lazy"
+              />
             </div>
             <div className="p-3">
               <p className="text-2xl font-semibold my-5">
@@ -69,6 +74,7 @@ function WeDo() {
                 className=" w-full h-auto bg-cover"
                 alt=""
                 src={prisonKids}
+                loading="lazy"
               />
             </div>
           </div>

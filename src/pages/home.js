@@ -18,7 +18,12 @@ function Home() {
         <Nav page="home" />
       </header>
       <main>
-        <img src={group} alt="" className="w-full h-full my-10" />
+        <img
+          src={group}
+          alt=""
+          className="w-full h-full my-10"
+          loading="lazy"
+        />
 
         <div className="flex flex-row-reverse my-3">
           <button className="text-white bg-red-700 px-6 py-3 rounded-l-full">
@@ -52,6 +57,7 @@ function Home() {
                 className="bg-cover rounded-xl md:border-0 md:rounded-none lg:rounded-none"
                 src={calling}
                 alt=""
+                loading="lazy"
               />
             </div>
             <div className="text-center p-5 rounded-xl md:rounded-none md:border-0 border order-2 my-auto">
@@ -59,6 +65,7 @@ function Home() {
                 src={binoculars}
                 alt=""
                 className="w-14 h-10 md:rounded-none lg:w-16 lg:h-16 mx-auto"
+                loading="lazy"
               />
               <p className="m-2 font-semibold">VISION</p>
               <p className="text-sm">
@@ -70,7 +77,12 @@ function Home() {
               <button className="bg-red-600 p-4 m-3">LEARN MORE</button>
             </div>
             <div className="text-center my-auto p-5 rounded-xl border md:border-0 md:rounded-none order-4 md:order-3 lg:order-3">
-              <img src={mission} alt="" className="w-16 h-16 mx-auto" />
+              <img
+                src={mission}
+                alt=""
+                className="w-16 h-16 mx-auto"
+                loading="lazy"
+              />
               <p className="m-2 font-semibold">MISION</p>
               <p>
                 To proclaim the good news by demonstrating Gods love justice
@@ -85,6 +97,7 @@ function Home() {
                 className="bg-cover rounded-xl md:border-0 md:rounded-none lg:rounded-none"
                 src={book}
                 alt=""
+                loading="lazy"
               />
             </div>
           </div>
@@ -160,7 +173,12 @@ function Home() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 my-5">
               <div className="relative overflow-hidden">
-                <img src={downkids} className="object-cover" alt="" />
+                <img
+                  src={downkids}
+                  className="object-cover"
+                  alt=""
+                  loading="lazy"
+                />
                 <div className="absolute bottom-10 left-10 md:left-5 lg:left-12 px-5 md:px-2 py-3 border border-white bg-amber-600">
                   <h4 className="text-sm md:text-sm lg:text-xl font-semibold tracking-tight text-white">
                     EDUCATION
@@ -176,7 +194,12 @@ function Home() {
                 </div>
               </div>
               <div className="relative overflow-hidden">
-                <img src={down3} className="object-cover" alt="" />
+                <img
+                  src={down3}
+                  className="object-cover"
+                  alt=""
+                  loading="lazy"
+                />
                 <div className="absolute bottom-10 left-8 md:left-2 lg:left-10 px-5 md:px-2 py-3 border border-white bg-blue-500">
                   <p className="text-sm md:text-sm lg:text-xl font-semibold tracking-tight text-white">
                     RECONCILIATION
@@ -209,6 +232,7 @@ function Home() {
                     src={slide}
                     className="m-2 rounded-full w-20 h-20"
                     alt=""
+                    loading="lazy"
                   />
                   <p>JOHN DOE</p>
                   <p className="text-xs">SOFTWARE ENGINEER</p>
@@ -231,6 +255,7 @@ function Home() {
                     src={slide}
                     className="m-2 rounded-full w-20 h-20"
                     alt=""
+                    loading="lazy"
                   />
                   <p>NTWALI RAY</p>
                   <p className="text-xs">SOFTWARE ENGINEER</p>
@@ -253,6 +278,7 @@ function Home() {
                     src={slide}
                     className="m-2 rounded-full w-20 h-20"
                     alt=""
+                    loading="lazy"
                   />
                   <p>CHILL BANGER</p>
                   <p className="text-xs">SOFTWARE ENGINEER</p>

@@ -37,7 +37,12 @@ function About() {
           </p>
           <div className="inline-block text-center max-w-lg mx-auto order-1 md:order-2 lg:order-2">
             <p className="font-bold text-2xl m-5">OUR VISION</p>
-            <img alt="" src={binoculars} className="mx-auto my-5 h-auto" />
+            <img
+              alt=""
+              src={binoculars}
+              className="mx-auto my-5 h-auto"
+              loading="lazy"
+            />
           </div>
         </div>
 
@@ -61,6 +66,7 @@ function About() {
               alt=""
               src={mission}
               className="mx-auto my-5 h-auto lg:w-4/5"
+              loading="lazy"
             />
           </div>
           <p className="inline-block text-xl lg:text-right">
@@ -79,6 +85,7 @@ function About() {
                 alt=""
                 src={spectacles}
                 className="mx-auto my-5 w-3/5 md:w-3/5 lg:w-2/5 h-auto"
+                loading="lazy"
               />
             </div>
             <p className="text-left text-xl">
@@ -126,12 +133,42 @@ function About() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 m-5">
-            <img alt="" src={board} className="w-4/5 h-auto mx-auto" />
-            <img alt="" src={board2} className="w-4/5 h-auto mx-auto" />
-            <img alt="" src={board3} className="w-4/5 h-auto mx-auto" />
-            <img alt="" src={board4} className="w-4/5 h-auto mx-auto" />
-            <img alt="" src={board5} className="w-4/5 h-auto mx-auto" />
-            <img alt="" src={board6} className="w-4/5 h-auto mx-auto" />
+            <img
+              alt=""
+              src={board}
+              className="w-4/5 h-auto mx-auto"
+              loading="lazy"
+            />
+            <img
+              alt=""
+              src={board2}
+              className="w-4/5 h-auto mx-auto"
+              loading="lazy"
+            />
+            <img
+              alt=""
+              src={board3}
+              className="w-4/5 h-auto mx-auto"
+              loading="lazy"
+            />
+            <img
+              alt=""
+              src={board4}
+              className="w-4/5 h-auto mx-auto"
+              loading="lazy"
+            />
+            <img
+              alt=""
+              src={board5}
+              className="w-4/5 h-auto mx-auto"
+              loading="lazy"
+            />
+            <img
+              alt=""
+              src={board6}
+              className="w-4/5 h-auto mx-auto"
+              loading="lazy"
+            />
           </div>
         </div>
 
@@ -148,6 +185,7 @@ function About() {
                 alt=""
                 src={mgt}
                 className="w-4/5 md:w-2/5 h-auto mx-auto lg:w-1/4"
+                loading="lazy"
               />
               <p className="font-bold text-lg">Mr. Rukundo Solomon </p>
               <p className="font-semibold">Chair</p>
@@ -155,27 +193,57 @@ function About() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5 m-5">
             <div className="text-center lg:m-4">
-              <img alt="" src={mgt2} className="w-4/5 h-auto mx-auto" />
+              <img
+                alt=""
+                src={mgt2}
+                className="w-4/5 h-auto mx-auto"
+                loading="lazy"
+              />
               <p className="font-bold text-lg">Ms. Namwano Irene</p>
             </div>
             <div className="text-center m-4">
-              <img alt="" src={mgt3} className="w-4/5 h-auto mx-auto" />
+              <img
+                alt=""
+                src={mgt3}
+                className="w-4/5 h-auto mx-auto"
+                loading="lazy"
+              />
               <p className="font-bold text-lg">Mr. Martin Munialo</p>
             </div>
             <div className="text-center m-4">
-              <img alt="" src={mgt4} className="w-4/5 h-auto mx-auto" />
+              <img
+                alt=""
+                src={mgt4}
+                className="w-4/5 h-auto mx-auto"
+                loading="lazy"
+              />
               <p className="font-bold text-lg">Mrs. Angella Alimwenda</p>
             </div>
             <div className="text-center m-4">
-              <img alt="" src={mgt5} className="w-4/5 h-auto mx-auto" />
+              <img
+                alt=""
+                src={mgt5}
+                className="w-4/5 h-auto mx-auto"
+                loading="lazy"
+              />
               <p className="font-bold text-lg">Mr. Robert Wanambwa</p>
             </div>
             <div className="text-center m-4">
-              <img alt="" src={mgt6} className="w-4/5 h-auto mx-auto" />
+              <img
+                alt=""
+                src={mgt6}
+                className="w-4/5 h-auto mx-auto"
+                loading="lazy"
+              />
               <p className="font-bold text-lg">Ms. Kevin Okwera</p>
             </div>
             <div className="text-center m-4">
-              <img alt="" src={mgt7} className="w-4/5 h-auto mx-auto" />
+              <img
+                alt=""
+                src={mgt7}
+                className="w-4/5 h-auto mx-auto"
+                loading="lazy"
+              />
               <p className="font-bold text-lg">Mr. Dickson Washitwaya</p>
             </div>
           </div>
