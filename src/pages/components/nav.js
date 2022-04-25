@@ -79,7 +79,7 @@ function Nav({ page }) {
           </Link>
         </div>
         <div
-          className="lg:hidden my-auto mx-4"
+          className="lg:hidden my-auto right-10 top-10 absolute"
           onClick={() => setIsNavOpen((prev) => !prev)}
         >
           <button className="w-8 h-8">
@@ -88,14 +88,14 @@ function Nav({ page }) {
             </svg>
           </button>
         </div>
-        <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
+        <div className={isNavOpen ? "h-100 w-100" : "hidden"}>
           <div
-            className="absolute top-0 left-0 px-8 py-8"
+            className="absolute top-0 right-0 px-8 py-8 bg-white  "
             onClick={() => setIsNavOpen(false)}
           >
             <button>
               <svg
-                className="h-8 w-8 text-gray-600 flex flex-row-reverse"
+                className="h-8 w-8 text-gray-600"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -107,72 +107,57 @@ function Nav({ page }) {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </button>
-            <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
-              <Link
-                to="/"
-                className={`my-4 mx-auto ${page === "home" ? "font-bold" : ""}`}
-              >
-                <p className="block my-auto lg:inline-block hover:text-gray-700 mr-10">
-                  HOME
-                </p>
-              </Link>
-              <Link
-                to="/what_we_do"
-                className={`my-4 ${page === "what-we-do" ? "font-bold" : ""}`}
-              >
-                <p className="block my-auto lg:inline-block hover:text-gray-700 mr-10">
-                  WHAT WE DO
-                </p>
-              </Link>
-              <Link
-                to="/stories"
-                className={`my-4 ${page === "stories" ? "font-bold" : ""}`}
-              >
-                <p className="block my-auto lg:inline-block hover:text-gray-700 mr-10">
-                  PRISON STORIES
-                </p>
-              </Link>
-              <Link
-                to="/about"
-                className={`my-auto ${page === "about-us" ? "font-bold" : ""}`}
-              >
-                <p className="block hover:text-gray-700 my-auto lg:inline-block mr-10">
-                  ABOUT US
-                </p>
-              </Link>
-              <Link to="/donate">
-                <button className="p-6 rounded-md text-white bg-red-700 my-2">
-                  DONATE
-                </button>
-              </Link>
-              <Link to="/get-started">
-                <button className="p-6 rounded-md text-white bg-black my-2">
-                  GET INVOLVED
-                </button>
-              </Link>
+            <ul className="flex flex-col items-center font-semibold">
+              <li className="my-3 block">
+                <Link
+                  to="/"
+                  className={`${page === "home" ? "font-bold" : ""}`}
+                >
+                  <p className="hover:text-gray-700">HOME</p>
+                </Link>
+              </li>
+              <li className="my-3 block">
+                <Link
+                  to="/what_we_do"
+                  className={`${page === "what-we-do" ? "font-bold" : ""}`}
+                >
+                  <p className="hover:text-gray-700">WHAT WE DO</p>
+                </Link>
+              </li>
+              <li className="my-3">
+                <Link
+                  to="/stories"
+                  className={`${page === "stories" ? "font-bold" : ""}`}
+                >
+                  <p className="hover:text-gray-700">PRISON STORIES</p>
+                </Link>
+              </li>
+              <li className="my-3">
+                <Link
+                  to="/about"
+                  className={`${page === "about-us" ? "font-bold" : ""}`}
+                >
+                  <p className="hover:text-gray-700">ABOUT US</p>
+                </Link>
+              </li>
+              <li className="my-3">
+                <Link to="/donate">
+                  <button className="p-6 rounded-md text-white bg-red-700">
+                    DONATE
+                  </button>
+                </Link>
+              </li>
+              <li className="my-3">
+                <Link to="/get-started">
+                  <button className="p-6 rounded-md text-white bg-black">
+                    GET INVOLVED
+                  </button>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
-      <style>{`
-            .hideMenuNav {
-            display: none;
-            }
-            .showMenuNav {
-            display: block;
-            position: absolute;
-            width: 60%;
-            height: 70%;
-            top: 0;
-            right: 0;
-            background: white;
-            z-index: 10;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            }
-      `}</style>
     </>
   );
 }
