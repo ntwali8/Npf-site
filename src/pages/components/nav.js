@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import Proptypes from "prop-types";
 
-import logo from "../../assets/logo.jpg";
+import logo from "../../assets/logo.png";
 
 function Nav({ page }) {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -17,7 +17,7 @@ function Nav({ page }) {
             alt=" "
             className="object-scale-down h-20 w-20 inline-block"
           />
-          <p className="my-auto inline-block">Prisons fellowship</p>
+          <p className="my-auto inline-block">Prisons fellowship Uganda</p>
         </div>
         {/* Menu items in the center here */}
         <div className="text-md hidden lg:flex text-center">

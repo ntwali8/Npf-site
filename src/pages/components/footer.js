@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer>
-      <section className="text-white bg-black px-4 md:px-2 text-sm mt-5">
+      <section className="text-white bg-gray-900 px-4 md:px-2 text-sm mt-5">
         <div className="grid grid-cols-6 gap-5 py-6">
           <div className="col-span-6 md:col-span-3 lg:col-span-2 p-6 md:order-1 lg:order-1">
             {/* Social media links */}
@@ -114,7 +114,7 @@ function Footer() {
           </div>
         </div>
       </section>
-      <section className="text-white bg-black">
+      <section className="text-white bg-gray-900">
         <div className="border-y border-white justify-between p-4 flex">
           <div className="">
             <a
