@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer>
-      <section className="text-white bg-gray-900 px-4 md:px-2 text-sm mt-5">
+      <section className="dark:bg-zinc-900 text-white bg-gray-900 px-4 md:px-2 text-sm">
         <div className="grid grid-cols-6 gap-5 py-6">
           <div className="col-span-6 md:col-span-3 lg:col-span-2 p-6 md:order-1 lg:order-1">
             {/* Social media links */}
@@ -114,7 +114,7 @@ function Footer() {
           </div>
         </div>
       </section>
-      <section className="text-white bg-gray-900">
+      <section className="dark:bg-zinc-900 text-white bg-gray-900">
         <div className="border-y border-white justify-between p-4 flex">
           <div className="">
             <a
@@ -138,6 +138,12 @@ function Footer() {
           </div>
           <p className="text-xs block">
             &copy; 2022 PRISON FELLOWSHIP UGANDA &reg;
+          </p>
+        </div>
+        <div className="flex flex-row-reverse mr-5">
+          <p className="rounded-full bg-red-700 inline-block px-5 py-1 -mt-5 text-black">
+            {" "}
+            &#63; Help
           </p>
         </div>
         <p className="text-center p-2 text-sm">

@@ -47,7 +47,7 @@ function Home() {
         </div>
 
         <div
-          className="w-2/3 md:w-11/12 lg:w-2/3 text-xs md:text-base
+          className="w-2/3 md:w-11/12 lg:w-2/3 text-xs md:text-base dark:text-black dark:bg-white
              lg:text-base rounded-none border-0 md:border md:rounded-xl md:border-red-800 lg:border lg:rounded-xl
               lg:border-red-800 mx-auto my-10"
         >
@@ -60,7 +60,7 @@ function Home() {
                 loading="lazy"
               />
             </div>
-            <div className="text-center p-5 rounded-xl md:rounded-none md:border-0 border order-2 my-auto">
+            <div className="dark:bg-white dark:text-black text-center p-5 rounded-xl md:rounded-none md:border-0 border order-2 my-auto">
               <img
                 src={binoculars}
                 alt=""
@@ -76,7 +76,7 @@ function Home() {
               </p>
               <button className="bg-red-600 p-4 m-3">LEARN MORE</button>
             </div>
-            <div className="text-center my-auto p-5 rounded-xl border md:border-0 md:rounded-none order-4 md:order-3 lg:order-3">
+            <div className="dark:bg-white dark:text-black text-center my-auto p-5 rounded-xl border md:border-0 md:rounded-none order-4 md:order-3 lg:order-3">
               <img
                 src={mission}
                 alt=""
@@ -103,7 +103,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="my-20 w-full bg-red-700 p-8 flex">
+        <div className="dark:bg-zinc-900 my-20 w-full bg-red-700 p-8 flex">
           <div className="mx-auto">
             <div className="text-white inline-block">
               <p className="text-sm lg:text-lg font-semibold">
@@ -114,7 +114,7 @@ function Home() {
                 information about getting involved.
               </p>
             </div>
-            <button className="inline-block bg-white px-4 py-2 rounded-lg mx-4">
+            <button className="inline-block dark:bg-red-700 bg-white px-4 py-2 rounded-lg mx-4">
               SIGN UP
             </button>
           </div>
@@ -162,7 +162,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="text-center text-white font-semibold bg-red-600 p-10 my-20">
+        <div className="dark:bg-zinc-900 text-center text-white font-semibold bg-red-600 p-10 my-20">
           <div className="w-2/3 mx-auto">
             <p className="text-lg">FOR THE CHILDREN</p>
             <p className="text-sm">
@@ -218,7 +218,7 @@ function Home() {
           <div className="carousel-inner relative w-full overflow-hidden">
             <div className="carousel-item active relative float-left w-full">
               <div className="w-3/4 grid grid-cols-1 gap-8 lg:grid-cols-10 mx-auto items-center">
-                <div className="inline-block lg:col-span-7 p-8 bg-red-200 border border-red-800 rounded-lg">
+                <div className="inline-block lg:col-span-7 p-8 bg-red-200 dark:text-black dark:bg-white dark:text-black border border-red-800 rounded-lg">
                   <p>
                     “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Tincidunt massa, dolor in ac congue. Feugiat leo consequat,
@@ -241,7 +241,7 @@ function Home() {
             </div>
             <div className="carousel-item relative float-left w-full">
               <div className="w-3/4 grid grid-cols-1 gap-8 lg:grid-cols-10 mx-auto items-center">
-                <div className="inline-block lg:col-span-7 p-8 bg-red-200 border border-red-800 rounded-lg">
+                <div className="inline-block lg:col-span-7 p-8 bg-red-200 dark:bg-white dark:text-black border border-red-800 rounded-lg">
                   <p>
                     “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Tincidunt massa, dolor in ac congue. Feugiat leo consequat,
@@ -264,7 +264,7 @@ function Home() {
             </div>
             <div className="carousel-item relative float-left w-full">
               <div className="w-3/4 grid grid-cols-1 gap-8 lg:grid-cols-10 mx-auto items-center">
-                <div className="inline-block lg:col-span-7 p-8 bg-red-200 border border-red-800 rounded-lg">
+                <div className="inline-block lg:col-span-7 p-8 bg-red-200 dark:bg-white dark:text-black border border-red-800 rounded-lg">
                   <p>
                     “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Tincidunt massa, dolor in ac congue. Feugiat leo consequat,

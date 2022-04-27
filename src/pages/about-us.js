@@ -27,39 +27,44 @@ function About() {
       </header>
       <main>
         <Card title="ABOUT US" />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 mx-20 lg:mx-36 mt-30">
-          <p className="inline-block text-xl order-2 md:order-1 lg:order-1">
-            Prison Fellowship Uganda is committed to be a Christ centered;
-            ministry reconciling prisoners ex-prisoners and their families with
-            God and victims of crime for the transformation and restoration of
-            hope to all those involved and affected by crime within and outside
-            Uganda
-          </p>
-          <div className="inline-block text-center max-w-lg mx-auto order-1 md:order-2 lg:order-2">
-            <p className="font-bold text-2xl m-5">OUR VISION</p>
-            <img
-              alt=""
-              src={binoculars}
-              className="mx-auto my-5 h-auto"
-              loading="lazy"
-            />
+        <div className="dark:bg-gray-400 dark:text-black">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 px-20 lg:px-36 pt-28">
+            <p className="inline-block text-xl order-2 md:order-1 lg:order-1">
+              Prison Fellowship Uganda is committed to be a Christ centered;
+              ministry reconciling prisoners ex-prisoners and their families
+              with God and victims of crime for the transformation and
+              restoration of hope to all those involved and affected by crime
+              within and outside Uganda
+            </p>
+            <div className="inline-block text-center max-w-lg mx-auto order-1 md:order-2 lg:order-2">
+              <p className="font-bold text-2xl p-5">OUR VISION</p>
+              <img
+                alt=""
+                src={binoculars}
+                className="mx-auto my-5 h-auto"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div className="flex flex-row-reverse py-5">
+            <button className="text-white bg-red-700 px-6 py-3 rounded-l-full">
+              <svg
+                className="w-5 h-5 inline-block mx-2 fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z" />
+              </svg>
+              <p className="inline-block">info@prisonfellowship.ug</p>
+            </button>
           </div>
         </div>
 
-        <div className="flex flex-row-reverse my-5">
-          <button className="text-white bg-red-700 px-6 py-3 rounded-l-full">
-            <svg
-              className="w-5 h-5 inline-block mx-2 fill-current"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-            >
-              <path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z" />
-            </svg>
-            <p className="inline-block">info@prisonfellowship.ug</p>
-          </button>
-        </div>
-
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2 items-center p-20 bg-gray-400">
+        <div
+          className="dark:text-black dark:bg-slate-600 grid grid-cols-1 gap-10 md:grid-cols-2 
+        lg:grid-cols-2 items-center p-20 bg-gray-400"
+        >
           <div className="inline-block text-center max-w-lg mx-auto">
             <p className="font-bold text-2xl m-5">OUR MISSION</p>
             <img
@@ -77,7 +82,10 @@ function About() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 items-center justify-between px-16 py-16 bg-gray-200">
+        <div
+          className="dark:text-black dark:bg-gray-400 grid grid-cols-1 md:grid-cols-2 
+        lg:grid-cols-2 gap-8 items-center justify-between px-16 py-16"
+        >
           <div className="inline-block text-center lg:mx-10">
             <p className="font-bold text-2xl m-5">OUR HISTORY</p>
             <div className="max-w-lg">
@@ -123,7 +131,7 @@ function About() {
           </p>
         </div>
 
-        <div className="px-10 py-10 bg-gray-400">
+        <div className="px-10 py-10 dark:text-black dark:bg-slate-600 bg-gray-400">
           <div className="text-center">
             <p className="font-bold text-xl m-5">BOARD OF DIRECTORS</p>
             <p className="text-lg font-semibold">
@@ -172,7 +180,7 @@ function About() {
           </div>
         </div>
 
-        <div className="px-10 py-10">
+        <div className="dark:text-black dark:bg-gray-400 px-10 py-10">
           <div className="text-center">
             <p className="font-bold text-xl m-5">MANAGEMENT COMMITTEE</p>
             <p className="text-lg font-semibold m-5">
