@@ -90,7 +90,7 @@ function Nav({ page }) {
         </div>
         <div className={isNavOpen ? "h-100 w-100" : "hidden"}>
           <div
-            className="absolute top-0 right-0 px-8 py-8 bg-white  "
+            className="absolute top-0 right-0 px-8 py-8 bg-white dark:bg-slate-700 "
             onClick={() => setIsNavOpen(false)}
           >
             <button>

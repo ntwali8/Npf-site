@@ -47,11 +47,14 @@ function Home() {
         </div>
 
         <div
-          className="w-2/3 md:w-11/12 lg:w-2/3 text-xs md:text-base dark:text-black dark:bg-white
-             lg:text-base rounded-none border-0 md:border md:rounded-xl md:border-red-800 lg:border lg:rounded-xl
-              lg:border-red-800 mx-auto my-10"
+          className="w-2/3 md:w-11/12 lg:w-2/3 text-xs md:text-base dark:text-black 
+             lg:text-base mx-auto my-10"
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-0 lg:grid-cols-2 lg:gap-0 gap-5">
+          <div
+            className="grid grid-cols-1 md:grid-cols-2 md:gap-0 lg:grid-cols-2 
+          lg:gap-0 gap-5 rounded-none border-0 md:border md:rounded-xl 
+          lg:border lg:rounded-xl border-5 border-red-800"
+          >
             <div className="">
               <img
                 className="bg-cover rounded-xl md:border-0 md:rounded-none lg:rounded-none"
@@ -60,37 +63,47 @@ function Home() {
                 loading="lazy"
               />
             </div>
-            <div className="dark:bg-white dark:text-black text-center p-5 rounded-xl md:rounded-none md:border-0 border order-2 my-auto">
-              <img
-                src={binoculars}
-                alt=""
-                className="w-14 h-10 md:rounded-none lg:w-16 lg:h-16 mx-auto"
-                loading="lazy"
-              />
-              <p className="m-2 font-semibold">VISION</p>
-              <p className="text-sm">
-                Committed to be a Christ centered; ministry reconciling
-                prisoners ex-prisoners and their families with God and victims
-                of crime for the transformation and restoration of hope to all
-                those involved and affected by crime within and outside Uganda
-              </p>
-              <button className="bg-red-600 p-4 m-3">LEARN MORE</button>
+            <div
+              className="flex dark:bg-white items-center px-5 rounded-xl md:rounded-none 
+            md:rounded-tr-xl"
+            >
+              <div className=" dark:text-black text-center order-2 p-2">
+                <img
+                  src={binoculars}
+                  alt=""
+                  className="w-14 h-10 md:rounded-none lg:w-16 lg:h-16 mx-auto"
+                  loading="lazy"
+                />
+                <p className="m-2 font-semibold">VISION</p>
+                <p className="text-sm">
+                  Committed to be a Christ centered; ministry reconciling
+                  prisoners ex-prisoners and their families with God and victims
+                  of crime for the transformation and restoration of hope to all
+                  those involved and affected by crime within and outside Uganda
+                </p>
+                <button className="bg-red-600 p-4 m-3">LEARN MORE</button>
+              </div>
             </div>
-            <div className="dark:bg-white dark:text-black text-center my-auto p-5 rounded-xl border md:border-0 md:rounded-none order-4 md:order-3 lg:order-3">
-              <img
-                src={mission}
-                alt=""
-                className="w-16 h-16 mx-auto"
-                loading="lazy"
-              />
-              <p className="m-2 font-semibold">MISION</p>
-              <p>
-                To proclaim the good news by demonstrating Gods love justice
-                mercy compassion reconciliation and restoration of hope to
-                prisoners, ex-prisoners and their families with victims of crime
-                within and outside Uganda.
-              </p>
-              <button className="bg-red-600 p-4 m-3">LEARN MORE</button>
+            <div
+              className="flex dark:bg-white items-center px-5 rounded-xl md:rounded-none 
+              md:rounded-bl-xl order-4 md:order-3 lg:order-3"
+            >
+              <div className="dark:bg-white dark:text-black text-center my-auto p-2">
+                <img
+                  src={mission}
+                  alt=""
+                  className="w-16 h-16 mx-auto"
+                  loading="lazy"
+                />
+                <p className="m-2 font-semibold">MISION</p>
+                <p>
+                  To proclaim the good news by demonstrating Gods love justice
+                  mercy compassion reconciliation and restoration of hope to
+                  prisoners, ex-prisoners and their families with victims of
+                  crime within and outside Uganda.
+                </p>
+                <button className="bg-red-600 p-4 m-3">LEARN MORE</button>
+              </div>
             </div>
             <div className="order-3 md:order-4 lg:order-4">
               <img
@@ -218,7 +231,7 @@ function Home() {
           <div className="carousel-inner relative w-full overflow-hidden">
             <div className="carousel-item active relative float-left w-full">
               <div className="w-3/4 grid grid-cols-1 gap-8 lg:grid-cols-10 mx-auto items-center">
-                <div className="inline-block lg:col-span-7 p-8 bg-red-200 dark:text-black dark:bg-white dark:text-black border border-red-800 rounded-lg">
+                <div className="inline-block lg:col-span-7 p-8 bg-red-200 dark:bg-white dark:text-black border border-red-800 rounded-lg">
                   <p>
                     “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Tincidunt massa, dolor in ac congue. Feugiat leo consequat,
